@@ -1,6 +1,7 @@
 module BitlyOAuth
   class Client
     include HTTParty
+    default_timeout 120
     base_uri 'https://api-ssl.bit.ly/v3/'
 
     BASE_URL = 'https://api-ssl.bit.ly/v3/'
